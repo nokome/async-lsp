@@ -61,6 +61,10 @@ define! {
         "workspace/didCreateFiles", did_create_files;
         "workspace/didRenameFiles", did_rename_files;
         "workspace/didDeleteFiles", did_delete_files;
+        "notebookDocument/didOpen", notebook_document_did_open;
+        "notebookDocument/didChange", notebook_document_did_change;
+        "notebookDocument/didSave", notebook_document_did_save;
+        "notebookDocument/didClose", notebook_document_did_close;
         "workspace/didChangeConfiguration", did_change_configuration;
         "textDocument/didOpen", did_open;
         "textDocument/didChange", did_change;
