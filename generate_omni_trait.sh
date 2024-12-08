@@ -8,10 +8,8 @@ else
 fi | jq -r '
   def is_excluded:
     .method |
-    # Notebook protocols are not supported.
-    test("^notebookDocument/")
     # Lifecycle methods are handled specially outside.
-    or test("^(initialized?|shutdown|exit)$");
+    test("^(initialized?|shutdown|exit)$");
 
   def to_snake:
     # Keep the prefix for `*/diagnostic` since both for workspace and document exist.
